@@ -26,6 +26,15 @@ FEEDBACK_API_ENDPOINT = "/api/v2/cortex/analyst/feedback"
 API_TIMEOUT = 50000  # in milliseconds
 
 # Initialize a Snowpark session for executing queries
+SF_CREDENTIALS = {
+    "account": "jsa18243",
+    "user": "lkr_python_runner",
+    "password": "pythonpassword",
+    "role": "DATA_ENGINEER",
+    "warehouse": "DEMO_WH",
+    "database": "DATA_GOV_POC",
+    "schema": "DATA_QUALITY_POC"
+}
 def create_snowflake_session():
     return Session.builder.configs(SF_CREDENTIALS).create()
 session = create_snowflake_session()
