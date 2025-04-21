@@ -1,9 +1,4 @@
-import pandas as pd
-"""
-Cortex Analyst App
-====================
-This app allows users to interact with their data using natural language.
-"""
+
 import json  # To handle JSON data
 import time
 from datetime import datetime
